@@ -1,0 +1,30 @@
+/*NAVIGATIEMENU*/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 200px;
+    background-color: #FF6F61;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFD54F;
+    font-size: 30px;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
+.nav-menu a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #FFD54F;
+}
+
+/*EINDE NAVIGATIEMENU*/
