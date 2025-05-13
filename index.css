@@ -9,7 +9,7 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    width: 100vw;
+    width: 100%;
     height: 200px;
     background-color: #FF6F61;
 }
@@ -44,9 +44,65 @@ nav a:hover {
     user-select: none;
 }
 
-
 /* EINDE NAVIGATIEMENU */
 
+
+/* CAROUSEL */
+
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.carousel-track {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.img-home {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 10px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 8px; /* eerder was dit 50% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow.left {
+    position: absolute;
+    left: 10px;
+}
+
+.arrow.right {
+    position: absolute;
+    right: 10px;
+}
+
+/* EINDE CAROUSEL */
 
 
 /* VOOR KLEINERE SCHERMEN */
