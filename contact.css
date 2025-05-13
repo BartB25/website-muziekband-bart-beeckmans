@@ -1,5 +1,9 @@
 /*NAVIGATIEMENU*/
 
+body {
+    margin: 0;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -12,14 +16,15 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #FFD54F;
-    font-size: 30px;
+    color: #FFFFFF;
+    font-size: 40px;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
     text-decoration: none;
-    color: #FFFFFF;
-    font-size: 40px;
+    color: #FFD54F;
+    font-size: 45px;
 }
 
 .nav-menu a.active {
@@ -27,4 +32,57 @@ nav a:hover {
     border-bottom: 2px solid #FFD54F;
 }
 
-/*EINDE NAVIGATIEMENU*/
+/* Hamburger knop */
+.hamburger {
+    display: none;
+    font-size: 40px;
+    color: #FFD54F;
+    cursor: pointer;
+    padding: 20px;
+    user-select: none;
+}
+
+
+/* EINDE NAVIGATIEMENU */
+
+
+
+/* VOOR KLEINERE SCHERMEN */
+@media screen and (max-width: 1200px) {
+
+
+}
+
+
+/* VOOR TABLETS */
+@media screen and (max-width: 992px) {
+
+
+}
+
+/* VOOR SMARTPHONES */
+@media screen and (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    nav a {
+    font-size: 25px;
+}
+
+    nav a:hover {
+    font-size: 35px;
+}
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Verberg menu als 'show' ontbreekt */
+    .nav-menu:not(.show) {
+        display: none;
+    }
+}
