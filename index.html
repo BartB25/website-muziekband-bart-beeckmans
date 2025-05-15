@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welkom op de muziekwebsite van Orlan</title>
+    <title>Orlan's website</title>
     <link rel="stylesheet" href="index.css">
     
-    <!-- Google Fonts: Montserrat -->
+    <!-- Google Fonts: Montserrat & pacifico-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+    
 </head>
 <body>
 
@@ -15,24 +17,23 @@
     &#9776; <!-- Unicode voor het hamburgermenu (☰) -->
     </div>
 
+    <!-- Navigatiemenu -->
     <nav class="nav-menu show">
         <a href="index.html" class="active">Home</a>
-        <a href="projecten.html">Projecten</a>
+        <a href="projecten.html">Projects</a>
         <a href="bio.html">Bio</a>
-        <a href="concerten.html">Concerten</a>
+        <a href="concerten.html">Concerts</a>
         <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
     </nav>
 
-    <div class="carousel">
-    <button class="arrow left" onmousedown="startScrolling(-1)" onmouseup="stopScrolling()" onmouseleave="stopScrolling()">&#10094;</button>
-    
-    <div class="carousel-track" id="carouselTrack">
-        <img src="img/3.jpeg" alt="Dit ben ik, Orlan, op de drum" class="img-home">
-        <img src="img/Orlan Artist pic.jpeg" alt="Dit ben ik, Orlan, op de drum (foto 2)" class="img-home">
+    <h1 id="welcomeTitle">Welcome to Orlan’s website!</h1>
+    <!-- Slideshow 2 foto's met behulp van javascript -->
+    <div class="slideshow-container">
+        <img id="slideshow" src="img/home/3.jpeg" alt="Slideshow image" class="img-home">
     </div>
 
-    <button class="arrow right" onmousedown="startScrolling(1)" onmouseup="stopScrolling()" onmouseleave="stopScrolling()">&#10095;</button>
-</div>
+   
     
 </body>
 

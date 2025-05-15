@@ -1,0 +1,24 @@
+@import url("global.css");
+body {
+    margin:0;
+}
+
+
+/* VOOR KLEINERE SCHERMEN */
+@media screen and (max-width: 1200px) {
+
+
+}
+
+
+/* VOOR TABLETS */
+@media screen and (max-width: 992px) {
+
+
+}
+
+/* VOOR SMARTPHONES */
+@media screen and (max-width: 768px) {
+
+
+}

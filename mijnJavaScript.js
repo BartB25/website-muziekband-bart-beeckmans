@@ -4,19 +4,29 @@ function toggleMenu() {
     navMenu.classList.toggle('show');
 }
 
-//doorscrollen door carousel 
-let scrollInterval;
+// slideshow functionaliteit
+const images = [
+    'img/home/3.jpeg',
+    'img/home/Orlan Artist pic.jpeg'
+];
 
-function startScrolling(direction) {
-    const track = document.getElementById("carouselTrack");
-    scrollInterval = setInterval(() => {
-        track.scrollBy({
-            left: direction * 200, // kleine stapjes voor soepel scrollen
-            behavior: 'auto'
-        });
-    }, 5); // elke 5ms
+let currentIndex = 0;
+
+function showNextImage() {
+    const slideshowImage = document.getElementById('slideshow');
+
+    // Start fade out
+    slideshowImage.classList.add('fade-out');
+
+    // Na de fade-out (500 ms), verander de afbeelding en fade weer in
+    setTimeout(() => {
+        currentIndex = (currentIndex + 1) % images.length;
+        slideshowImage.src = images[currentIndex];
+
+        // Fade back in
+        slideshowImage.classList.remove('fade-out');
+    }, 500);
 }
 
-function stopScrolling() {
-    clearInterval(scrollInterval);
-}
+// elke 1,5 seconde veranderen van foto
+setInterval(showNextImage, 4000);
