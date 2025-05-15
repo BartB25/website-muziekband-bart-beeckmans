@@ -5,10 +5,8 @@ body {
 }
 
 h1 {
-    position: relative;
     font-family: 'Pacifico';
-    width: auto;
-    left: 10px;
+    text-align: center;
     font-size: 40px;
 }
 
@@ -29,10 +27,15 @@ h1 {
 
 .bio-photo {
   width: 300px;
+  margin-left: 50px;
   height: auto;
   border-radius: 10px;
 }
 
+.bio-photo:hover {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
 
 /* VOOR KLEINERE SCHERMEN */
 @media screen and (max-width: 1200px) {

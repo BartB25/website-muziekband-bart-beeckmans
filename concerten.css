@@ -4,6 +4,26 @@ body {
     margin:0;
 }
 
+h1 {
+    font-family: 'Pacifico';
+    text-align: center;
+    font-size: 40px;
+}
+
+.concerts-list {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+}
+
+th {
+    padding-bottom: 20px;
+}
+
+td {
+    width: 400px;
+}
+
 
 /* VOOR KLEINERE SCHERMEN */
 @media screen and (max-width: 1200px) {
