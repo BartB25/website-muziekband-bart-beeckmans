@@ -9,6 +9,8 @@
     <!-- Google Fonts: Montserrat & pacifico-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- link voor icoontjes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
 </head>
 <body>
@@ -27,10 +29,53 @@
         <a href="gallery.html">Gallery</a>
     </nav>
 
+        <h1>Project Alleen een wonder</h1>
+
+       <div class="project-container">
+        <div class="project-text">
+        <p>In Alleen een wonder vertelt Johannes Lievens over iemand die gered wordt door een kiwiplant, iemand die genekt wordt door vijf cijfers en iemand wiens leven veranderde door een ontmoeting aan de voet van de Himalaya. 
+        Samen met drummer Orlan Ghekiere is Johannes koortsachtig op reis, nachtenlang, op zoek naar houvast.</p>
+        </div>
+    </div>
+
+        
+    
+   
       
     
 </body>
 
 <script src="mijnJavaScript.js"></script>
+<script>
+    //Carousel (slideshow)
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active2", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active2";
+} 
+</script>
 
 </html>

@@ -2,3 +2,24 @@
 body {
     margin:0;
 }
+
+h1 {
+    font-family: 'Pacifico';
+    font-size: 40px;
+    text-align: center;
+    color: lightblue;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 0 20px;
+  gap: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+.project-text {
+  font-size: 16px;
+  line-height: 1.6;
+}

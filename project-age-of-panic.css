@@ -3,6 +3,13 @@ body {
     margin:0;
 }
 
+h1 {
+    font-family: 'Pacifico';
+    font-size: 40px;
+    text-align: center;
+    color: lightblue;
+}
+
 /*CAROUSEL */
 .slideshow-container {
   max-width: 1000px;
@@ -14,7 +21,8 @@ body {
 .slideshow-image {
   display: block;
   margin: 0 auto;   
-  width: 80%;      
+  width: auto;
+  height: 533px;
 }
 
 /* Hide the images by default */
@@ -30,16 +38,16 @@ body {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: lightblue;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  user-select: none;
+  user-select: none; 
 }
 
 .next {
-  left: 85%;
+  left: 86%;
   border-radius: 3px 0 0 3px;
 }
 
@@ -52,21 +60,9 @@ body {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-
 /* Number text (1/6 etc) */
 .numbertext {
-  color: #f2f2f2;
+  color: lightblue;;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -74,13 +70,12 @@ body {
   left: 10%;
 }
 
-
 .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: lightblue;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -92,7 +87,7 @@ body {
 }
 
 .active2, .dot:hover {
-  background-color: #717171;
+  background-color: grey;
 }
 
 /* Fading animation */

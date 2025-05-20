@@ -8,21 +8,31 @@ h1 {
     font-family: 'Pacifico';
     text-align: center;
     font-size: 40px;
+    color: lightblue;
 }
 
 .concerts-list {
     display: block;
     margin: 0 auto;
-    width: 400px;
+    width: 600px;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: lightblue;;
 }
 
-th {
-    padding-bottom: 20px;
+.concerts-list th {
+    padding: 20px;
+    color: white;
+    background-color: lightblue;
 }
 
-td {
+.concerts-list td {
     width: 400px;
+    padding: 10px;
+    text-align: center;
 }
+
+
 
 
 /* VOOR KLEINERE SCHERMEN */

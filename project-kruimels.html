@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project kruimels</title>
+    <title>Project Kruimels</title>
     <link rel="stylesheet" href="project-kruimels.css">
     
     <!-- Google Fonts: Montserrat & pacifico-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- link voor icoontjes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
 </head>
 <body>
@@ -27,10 +29,82 @@
         <a href="gallery.html">Gallery</a>
     </nav>
 
-      
+    <h1>Project Kruimels</h1>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img class="slideshow-image" src="/img/Projects/Kruimels/25032025_Memento-c Camille Mortier-8807.jpg" alt="">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img class="slideshow-image" src="/img/Projects/Kruimels/25032025_Memento-c Camille Mortier-8830.jpg" alt="">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img class="slideshow-image" src="/img/Projects/Kruimels/Coverbeeld.jpg" alt="">
+        </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <div class="project-container">
+        <div class="project-text">
+        <p>In de voorstelling Kruimels gaan barokmuziek, woord en live electronics een spannend gesprek aan met elkaar over verdwalen: 
+        Mona Thijs voert in haar zelfgeschreven teksten iemand op die de weg probeert kwijt te raken in een landschap dat steeds magisch realistischer wordt. 
+        Live electronics-muzikant*** Orlan Ghekiere creëert een elektronisch soundscape met field recordings die hij maakte op tochten zonder eindbestemming en barokensemble Kapellmeister brengt werk van Buxtehude,
+         Telemann, J. S. Bach en Schmelzer: muziek waarin de zoekende voetstappen van de jonge Bach echoën,
+         die een staptocht van honderden kilometers ondernam, dwars door de Duitse bossen, op weg naar zijn grote voorbeeld Buxtehude. 
+        Kruimels zoekt het punt op waarop je rond je kijkt, een vreemde vogel hoort en denkt: ik ben verdwaald, en hoe erg is dat eigenlijk?</p>
+        <p>***Tijdens de voorstelling bestuurt Orlan live het muzieksoftwareprogramma Ableton. 
+        Enerzijds gebruikt hij zelfgemaakte geluidsopnames als sferische klanklaag: opnames van lange natuurtochten, de roep van een stern, het gekraak van ijs, de stuwende bassen van een dorpsfeest. 
+        Anderzijds vervormt hij die eigen geluidsopnames - een windhoos of een eenzame saxofoon - door ze uit elkaar te trekken tot muzieknoten. Vervolgens bespeelt hij die noten, net zoals je een melodisch instrument bespeelt.</p>
+        </div>
+    </div> 
     
 </body>
 
 <script src="mijnJavaScript.js"></script>
+<script>
+    //Carousel (slideshow)
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active2", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active2";
+} 
+</script>
 
 </html>

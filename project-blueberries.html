@@ -9,6 +9,8 @@
     <!-- Google Fonts: Montserrat & pacifico-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- link voor icoontjes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
 </head>
 <body>
@@ -27,10 +29,118 @@
         <a href="gallery.html">Gallery</a>
     </nav>
 
+    <h1>Project Blueberries leave bruises on the skin</h1>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img class="slideshow-image" src="/img/Projects/Blueberries leave bruises on the skin/blueberries_1-coverbeeld.jpeg" alt="">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img class="slideshow-image" src="/img/Projects/Blueberries leave bruises on the skin/blueberries_2.jpeg" alt="">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img class="slideshow-image" src="/img/Projects/Blueberries leave bruises on the skin/blueberries_3.jpeg" alt="">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img class="slideshow-image" src="/img/Projects/Blueberries leave bruises on the skin/blueberries_5.jpeg" alt="">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img class="slideshow-image" src="/img/Projects/Blueberries leave bruises on the skin/blueberries_6.jpeg" alt="">
+        </div>
+
+        
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+
+    <div class="project-container">
+        <div class="project-text">
+            <p>In de danstheatervoorstelling Blueberries leave bruises on the skin proberen drie spelers een antwoord te vinden op de vraag in welke rollen je jezelf kan vinden en verliezen. 
+                In een bonte verzameling aan pogingen proberen ze zichzelf en de ander bij elkaar te puzzelen. 
+                Hoeveel personen kan je tegelijk zijn? Wie bepaalt er wie je bent? En wat blijft er van je over als er niemand kijkt?</p>
+                <p>Blueberries leave bruises on the skin is een stoet van mogelijke antwoorden op de vraag hoe maakbaar je bent, 
+                een viering van menselijke onzekerheid en overmoed, een feest waarop iedereen zichzelf heeft uitgenodigd, een ode aan het zoeken.</p>
+
+            <p><b>CONCEPT & REGIE</b> <br> Mona Thijs & Astrid De Haes </p>
+            <p><b>SPEL</b> <br> Melody Van Gompel, Anna Tierney & Kaat De Bakker <br></p>
+            <p><b>GELUIDSONTWERP</b> <br> Orlan Ghekiere <br></p>
+            <p><b>KOSTUUMONTWERP</b> <br> Eli Verkeyn <br></p>
+            <p><b>LICHTONTWERP</b> <br> Dominique Pollet <br></p>
+            <p><b>DRAMATURGIE</b> <br> Jenne Van Daele <br></p>
+            <p><b>TEKSTCOACH</b> <br> Peggy De Landtsheer <br></p>
+            <p><b>PRODUCTIELEIDING</b> <br> Kato Wilms <br></p>
+            <p><b>SPECIALE DANK AAN</b> <br> Lennert Madou, Gideon Hakker, Sophie Tiersma & Emiel Van Wouwe</p>
+
+            <p><b>TEASER</b> <br>
+            DP Loic Meulenberg <br>
+            PRODUCTIE Het Offensief <br>
+            1ST Jeffrey Roekens <br>
+            </p>
+
+            <p><b>COPRODUCTIE</b> <br> de Vlaamse overheid, ECRU, DE SINGEL & Sabam for Culture</p>
+            <p><b>ONDERSTEUNING</b> <br> Kunstencentrum BUDA, Kultuurfaktorij Monty, Destelheide Hanenbos, C-TAKT, Zuidpool, Passerelle, PerPodium & Klein Verzet</p>
+            <p><b>MET DE STEUN VAN</b> <br> de Belgische Tax Shelter via Cronos Invest & Piros</p>
+
+
+        </div>
+    </div>
+
+        
+    
+   
       
     
 </body>
 
 <script src="mijnJavaScript.js"></script>
+<script>
+    //Carousel (slideshow)
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active2", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active2";
+} 
+</script>
 
 </html>

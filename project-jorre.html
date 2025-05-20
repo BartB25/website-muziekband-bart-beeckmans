@@ -9,6 +9,8 @@
     <!-- Google Fonts: Montserrat & pacifico-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- link voor icoontjes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
 </head>
 <body>
@@ -27,10 +29,101 @@
         <a href="gallery.html">Gallery</a>
     </nav>
 
+    <h1>Project Jorre</h1>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img class="slideshow-image" src="/img/Projects/Jorre/Foto's-Reset_1.jpg" alt="">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img class="slideshow-image" src="/img/Projects/Jorre/Foto's-Reset_2.jpg" alt="">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img class="slideshow-image" src="/img/Projects/Jorre/Reset_1.jpg" alt="">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img class="slideshow-image" src="/img/Projects/Jorre/Reset_2.jpg" alt="">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img class="slideshow-image" src="/img/Projects/Jorre/Album Cover.jpeg" alt="">
+        </div>
+
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+
+    <div class="project-container">
+        <div class="project-text">
+            <p>Orlan Ghekiere onderzoekt met zijn muzikaal project de balans tussen stilte, samples, herinneringen, tastbaarheid en digitalisering.
+            Een elektrische samenkomst is het dus zeker: de muziek staat nooit stil en trekt je elke kant op.</p>
+        </div>
+        <div class="project-video">
+        <iframe width="560" height="315" src="/img/Projects/Jorre/story4.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="spotify">
+            <p>
+            <strong>Spotify:</strong> <a href="https://open.spotify.com/album/3NYJHH0PSpYB5asAt6MzO6?si=wmomt7O6Q2iLzJXjm2tALA" target="_blank" title="Listen on Spotify" style="font-size: 2rem; color: #1DB954;">
+            <i class="fab fa-spotify"></i> </a> 
+            </p> 
+        </div>
+    </div>
+
+        
+    
+   
       
     
 </body>
 
 <script src="mijnJavaScript.js"></script>
+<script>
+    //Carousel (slideshow)
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active2", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active2";
+} 
+</script>
 
 </html>

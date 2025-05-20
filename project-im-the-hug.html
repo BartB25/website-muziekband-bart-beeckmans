@@ -9,6 +9,8 @@
     <!-- Google Fonts: Montserrat & pacifico-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- link voor icoontjes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
 </head>
 <body>
@@ -27,10 +29,89 @@
         <a href="gallery.html">Gallery</a>
     </nav>
 
+    <h1>Project I'm the hug</h1>
+    
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img class="slideshow-image" src="/img/Projects/I'm The Hug/63560004.JPG" alt="">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img class="slideshow-image" src="/img/Projects/I'm The Hug/63560017.JPG" alt="">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img class="slideshow-image" src="/img/Projects/I'm The Hug/image00011.jpeg" alt="">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img class="slideshow-image" src="/img/Projects/I'm The Hug/image00012.jpeg" alt="">
+        </div>
+
+            
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+
+    <div class="project-container">
+        <div class="project-text">
+            <p>I'm the hug is Mathilde Luijten, Abel Ghekiere, Simon Mitxelena and Orlan Ghekiere.
+                Each with their own background, the musicians bring singer-songwriter, folk, indie pop and jazz together into an intimate sound.
+                For fans of Hayley Heynderickx, Florist and Keaton Henson.
+            </p>
+        </div>
+    </div>
+
+        
+    
+   
       
     
 </body>
 
 <script src="mijnJavaScript.js"></script>
+<script>
+    //Carousel (slideshow)
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active2", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active2";
+} 
+</script>
 
 </html>
