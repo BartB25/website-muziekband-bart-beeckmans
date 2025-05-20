@@ -30,3 +30,7 @@ function showNextImage() {
 
 // elke 1,5 seconde veranderen van foto
 setInterval(showNextImage, 4000);
+
+
+
+

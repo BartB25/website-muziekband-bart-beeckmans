@@ -9,6 +9,8 @@
     <!-- Google Fonts: Montserrat & pacifico-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- link voor icoontjes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
 </head>
 <body>
@@ -19,18 +21,115 @@
 
     <!-- Navigatiemenu -->
     <nav class="nav-menu show">
-        <a href="index.html" class="active">Home</a>
-        <a href="projects.html">Projects</a>
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
         <a href="bio.html">Bio</a>
         <a href="concerts.html">Concerts</a>
         <a href="contact.html">Contact</a>
         <a href="gallery.html">Gallery</a>
     </nav>
 
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 6</div>
+        <img class="slideshow-image" src="/img/Projects/Abel Ghekiere/1.jpeg" alt="">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 6</div>
+        <img class="slideshow-image" src="/img/Projects/Abel Ghekiere/2.jpeg" alt="">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 6</div>
+        <img class="slideshow-image" src="/img/Projects/Abel Ghekiere/3.jpeg" alt="">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img class="slideshow-image" src="/img/Projects/Abel Ghekiere/4.jpeg" alt="">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img class="slideshow-image" src="/img/Projects/Abel Ghekiere/5.jpeg" alt="">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img class="slideshow-image" src="/img/Projects/Abel Ghekiere/Bandpic.jpeg" alt="">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+    </div>
+
+    <div class="project-container">
+        <div class="project-text">
+            <p>Abel Ghekiere is een Belgische multi instrumentalist met een sound die voortkomt uit minimalistische jazz, traditionele folk en field recordings.</p>
+            <p>Op zijn debuutalbum – Voor het verdwijnt, en daarna – klonken de sporen van verdriet en verlies, een album dat meewiegt en troost.</p>
+            <p>In zijn nieuwe muziek speelt hij met meer openheid, zachtheid en euforie. De inspiratie voor de intuitieve, gestripte vorm van songwriting komt van o.a. Nils Økland, Sufjan Stevens en Caroline.</p>
+            <p>Abel is gitarist van opleiding maar neemt klarinet en banjo mee in de studio en op het podium. Zijn nieuwe album, ‘In de verte, dit uitzicht’ verschijnt in februari 2025 op vinyl bij Rotkat records.</p>
+            <p>Live speelt hij in quartet met Tobias Vockaert (sax), Orlan Ghekiere (drum) en Hendrike Scharmann (viool).</p>
+        </div>
+        <div class="project-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DUgJgCsI-Ic?si=oGlVlqmDnIoU1fw8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="spotify">
+            <p>
+            <strong>Spotify:</strong> <a href="https://open.spotify.com/album/5lp6bCz4tmKLFgRRuXrhoJ?si=Q3ZXCiFFT4yj4Hbq9ruN8A" target="_blank" title="Listen on Spotify" style="font-size: 2rem; color: #1DB954;">
+            <i class="fab fa-spotify"></i> </a> 
+            </p> 
+        </div>
+    </div>
+
+        
+    
+   
       
     
 </body>
 
 <script src="mijnJavaScript.js"></script>
+<script>
+    //Carousel (slideshow)
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active2", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active2";
+} 
+</script>
 
 </html>

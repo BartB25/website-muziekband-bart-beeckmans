@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Age of panic</title>
-    <link rel="stylesheet" href="project-age-of-panic.css">
+    <title>Project Age Of Panic</title>
+    <link rel="stylesheet" href="project-abel.css">
     
     <!-- Google Fonts: Montserrat & pacifico-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- link voor icoontjes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
 </head>
 <body>
@@ -19,18 +21,98 @@
 
     <!-- Navigatiemenu -->
     <nav class="nav-menu show">
-        <a href="index.html" class="active">Home</a>
-        <a href="projects.html">Projects</a>
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
         <a href="bio.html">Bio</a>
         <a href="concerts.html">Concerts</a>
         <a href="contact.html">Contact</a>
         <a href="gallery.html">Gallery</a>
     </nav>
 
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img class="slideshow-image" src="/img/Projects/Age of Panic/Age-of-panic-2.jpeg" alt="">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img class="slideshow-image" src="/img/Projects/Age of Panic/Age-of-panic-3.jpeg" alt="">
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img class="slideshow-image" src="/img/Projects/Age of Panic/age-of-panic-Coverbeeld.jpeg" alt="">
+        </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <div class="project-container">
+        <div class="project-text">
+        <p>“Laetitiaaaa, Laetitiaaaa…!”</p>
+        <p>Zondag.</p>
+        <p>Laetitia, reporter voor het journaal, doet verslag van de grootste politieke veldslag die het land de afgelopen jaren heeft gezien. Midden in deze chaos wil Vincent, haar ex-man, onaangekondigd hun twee jonge dochters zien.</p>
+        <p>Het is een manische dag: een moeder en een vader verwikkeld in een voogdijstrijd, twee onrustige dochters, een opgefokte babysitter, een behoeftig nieuw vriendje en een land in tweeën gedeeld.</p>
+        <p>Age of Panic, naar de gelijknamige film (2013) van Justine Triet, is een verhaal over hoe wij als mens en maatschappij steeds verder van elkaar weggroeien.</p>
+        <p>Hoe polarisatie ervoor zorgt dat we enkel nog naast elkaar en niet met elkaar spreken.</p>
+        <p>Een verhaal waarin schuld en onschuld, waarheid en leugen, goed en fout elkaar steeds uitdagen.</p>
+        <p>Over het goed willen doen en dan toch falen.</p>
+        <p>Maken we een onderscheid tussen iemands intentie en het resultaat?</p>
+        <p>CREDITS</p>
+        <p>Concept & spel Kes Bakker, Timon Kouloumpis, Mona Lahousse, Jef Uyttenhove
+        Coaching Jesse Vandamme NaarLa Bataille de Solférino (2013) – Justine Triet
+        Muziek Orlan Ghekiere Techniek Ilja Van Vlierberghe Met dank aan Zuidpool, TG Stan,Arca theater, Matterhorn VZW, Koninklijk Conservatorium Antwerpen, KASK & Conservatorium Gent, 
+        Toneelacademie Maastricht, Louise Van den Eede, Simon De Winne, Carolina Maciel de França, Mieja Hollevoet, Bauke Lievens, Thomas Walgrave, Bart van den Eynde en Zaza Dupont</p>
+        </div>
+    </div>
+
+        
+    
+   
       
     
 </body>
 
 <script src="mijnJavaScript.js"></script>
+<script>
+    //Carousel (slideshow)
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active2", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active2";
+} 
+</script>
 
 </html>
