@@ -126,3 +126,56 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
 }
+
+/* VOOR KLEINERE SCHERMEN */
+@media screen and (max-width: 1200px) {
+
+
+}
+
+
+/* VOOR TABLETS */
+@media screen and (max-width: 992px) {
+.slideshow-image {
+  height: 500px;
+}
+
+.next {
+  left: 88%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 2%;
+}
+
+.numbertext {
+  left: 2%;
+}
+
+
+}
+
+/* VOOR SMARTPHONES */
+@media screen and (max-width: 768px) {
+
+.slideshow-image {
+  height: 280px;
+}
+
+.next {
+  left: 88%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 2%;
+}
+
+.numbertext {
+  left: 2%;
+}
+   
+}
+
+

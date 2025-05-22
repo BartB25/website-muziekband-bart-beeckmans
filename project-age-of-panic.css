@@ -116,3 +116,56 @@ h1 {
   font-size: 16px;
   line-height: 1.6;
 }
+
+/* VOOR KLEINERE SCHERMEN */
+@media screen and (max-width: 1200px) {
+
+
+}
+
+
+/* VOOR TABLETS */
+@media screen and (max-width: 992px) {
+.slideshow-image {
+  height: 400px;
+}
+
+.next {
+  left: 88%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 2%;
+}
+
+.numbertext {
+  left: 2%;
+}
+
+
+}
+
+/* VOOR SMARTPHONES */
+@media screen and (max-width: 768px) {
+
+.slideshow-image {
+  height: 220px;
+}
+
+.next {
+  left: 88%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 2%;
+}
+
+.numbertext {
+  left: 2%;
+}
+   
+}
+
+

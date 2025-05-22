@@ -23,6 +23,7 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   width: 75vw;
   margin-left: 50px;
+  margin-right: 50px;
 
 }
 
@@ -40,19 +41,35 @@ h1 {
 
 /* VOOR KLEINERE SCHERMEN */
 @media screen and (max-width: 1200px) {
-
+  
 
 }
 
 
 /* VOOR TABLETS */
 @media screen and (max-width: 992px) {
-
+  
 
 }
 
 /* VOOR SMARTPHONES */
 @media screen and (max-width: 768px) {
+  .bio-content {
+    display: flex;
+  flex-direction: column;
+  }
 
+  .bio-photo:hover {
+  -webkit-filter: none;
+  filter: none;
+  }
 
+  .bio-photo {
+  display: block;
+  margin: 0 auto;
+  }
+
+  .bio-text {
+    margin: auto;
+  }
 }

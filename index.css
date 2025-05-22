@@ -69,22 +69,12 @@ body {
    
     /* hoofdtitel */
     #welcomeTitle {
-    font-family: 'Pacifico';
     font-size: 30px;;
     position: absolute;
     top: 280px;
     width: 100%;
     text-align: center;
-    animation: slideFullWidth 6s ease-in-out infinite alternate;
-}
-
-@keyframes slideFullWidth {
-    0% {
-        transform: translateX(0);
-}
-    100% {
-        transform: translateX(calc(0vw - 0%));
-  }
+    animation: none;
 }
 
 }

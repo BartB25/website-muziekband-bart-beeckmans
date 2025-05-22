@@ -47,6 +47,9 @@ h3 {
 
 /* VOOR SMARTPHONES */
 @media screen and (max-width: 768px) {
-
+    .projects-wrapper {
+    display: flex;
+    flex-direction: column;
+}
 
 }

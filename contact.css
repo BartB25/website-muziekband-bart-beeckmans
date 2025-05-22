@@ -8,7 +8,7 @@ body {
     display: block;
     margin: 0 auto;
     width: 200px;
-    margin-top: 150px;
+    margin-top: 25px;
 }
 
 
@@ -23,6 +23,34 @@ p{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 }
+
+/* banner adobe animate */
+
+/* Adobde animate  */
+
+     #animation_container {
+	width: 100%;
+	height: auto;
+	top: -50px;
+	position:relative;
+	margin:auto;
+	margin-bottom: 0px;
+  }
+
+  
+  @media (min-width: 1280px) {
+
+	.img-wrap { display: none; }
+              .animatieBanner{display: flex;}
+}
+
+@media (max-width: 1279px){
+
+	.img-wrap {display: flex;}
+              .animatieBanner{display: none;}	
+}
+
+/* END banner */
 
 
 /* VOOR KLEINERE SCHERMEN */
@@ -40,6 +68,8 @@ p{
 
 /* VOOR SMARTPHONES */
 @media screen and (max-width: 768px) {
-
+    .contact {
+    margin-top: 100px;
+}
 
 }

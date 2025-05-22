@@ -44,19 +44,48 @@ h1 {
 
 /* VOOR KLEINERE SCHERMEN */
 @media screen and (max-width: 1200px) {
-
+.gallery-wrapper {
+    grid-template-rows: 400px 400px;
+}
 
 }
 
 
 /* VOOR TABLETS */
 @media screen and (max-width: 992px) {
+    .gallery-wrapper {
+    grid-template-rows: 300px 300px;
+    grid-template-columns: auto auto;
+}
 
+.gallery-gif {
+    width: 600px;
+    height: 450px;
+}
 
 }
 
 /* VOOR SMARTPHONES */
 @media screen and (max-width: 768px) {
+    .gallery-wrapper {
+    grid-template-rows: 200px 200px;
+    grid-template-columns: auto auto;
+}
 
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: none;
+}
+
+.gallery-gif {
+    width: 433px;
+    height: 333px;
+}
+
+.gallery-image:hover {
+    transform: none;
+}
 
 }
