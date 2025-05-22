@@ -68,8 +68,6 @@ p{
 
 /* VOOR SMARTPHONES */
 @media screen and (max-width: 768px) {
-    .contact {
-    margin-top: 100px;
+    
 }
 
-}
