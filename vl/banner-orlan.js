@@ -263,45 +263,45 @@ if (reversed == null) { reversed = false; }
 
 	// drum
 	this.instance = new lib.Symbool6("synched",0);
-	this.instance.setTransform(952,622,1,1,0,0,0,200,200);
+	this.instance.setTransform(952,682,1,1,0,0,0,200,200);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({y:270},59).to({_off:true},61).wait(120));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({y:330},59).to({_off:true},61).wait(120));
 
 	// gitaarLinks
 	this.instance_1 = new lib.Symbool7("synched",0);
-	this.instance_1.setTransform(569.45,212.1,1,1,-14.9992,0,0,83.4,200.1);
+	this.instance_1.setTransform(569.45,272.1,1,1,-14.9992,0,0,83.4,200.1);
 	this.instance_1._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(59).to({_off:false},0).to({regX:83.5,rotation:29.9996,x:569.55,y:212.15},30).to({regX:83.4,rotation:-14.9992,x:569.45,y:212.1},30).to({_off:true},1).wait(120));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(59).to({_off:false},0).to({regX:83.5,rotation:29.9996,x:569.55,y:272.15},30).to({regX:83.4,rotation:-14.9992,x:569.45,y:272.1},30).to({_off:true},1).wait(120));
 
 	// gitaarRechts
 	this.instance_2 = new lib.Symbool8("synched",0);
-	this.instance_2.setTransform(1311.35,212.15,1,1,14.9992,0,0,83.4,200.1);
+	this.instance_2.setTransform(1311.35,272.15,1,1,14.9992,0,0,83.4,200.1);
 	this.instance_2._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(59).to({_off:false},0).to({regX:83.5,rotation:-29.9981,x:1311.45,y:211.95},30).to({regX:83.4,rotation:14.9992,x:1311.35,y:212.15},30).to({_off:true},1).wait(120));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(59).to({_off:false},0).to({regX:83.5,rotation:-29.9981,x:1311.45,y:271.95},30).to({regX:83.4,rotation:14.9992,x:1311.35,y:272.15},30).to({_off:true},1).wait(120));
 
 	// speakerLinks
 	this.instance_3 = new lib.Symbool2();
-	this.instance_3.setTransform(250,239.5,1,1,0,0,0,200,180.5);
+	this.instance_3.setTransform(250,299.5,1,1,0,0,0,200,180.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).to({_off:true},120).wait(120));
 
 	// speakerRechts
 	this.instance_4 = new lib.Symbool4();
-	this.instance_4.setTransform(1673,195,1,1,0,0,0,112,101);
+	this.instance_4.setTransform(1673,255,1,1,0,0,0,112,101);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_4).to({_off:true},120).wait(120));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,1784.9,822);
+p.nominalBounds = new cjs.Rectangle(0,0,1784.9,882);
 // library properties:
 lib.properties = {
 	id: '3FD7F6DBE7212244A6465DDA5284CAE5',
 	width: 1920,
-	height: 420,
+	height: 480,
 	fps: 24,
 	color: "#999999",
 	opacity: 1.00,

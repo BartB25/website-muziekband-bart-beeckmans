@@ -28,15 +28,27 @@ p{
 
 /* Adobde animate  */
 
-     #animation_container {
-	width: 100%;
-	height: auto;
-	top: -50px;
+    .animatieBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 420px;
+    overflow: hidden;
+    }
+
+    #animation_container {
+	max-width: 100%;
+	height: 420px;
 	position:relative;
 	margin:auto;
 	margin-bottom: 0px;
-  }
+    }
 
+    canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    }
   
   @media (min-width: 1280px) {
 
