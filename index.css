@@ -78,11 +78,16 @@ body {
     /* hoofdtitel */
     #welcomeTitle {
     font-size: 30px;;
-    position: absolute;
-    top: 280px;
+    position: relative;
+    top: 0px;
     width: 100%;
     text-align: center;
     animation: none;
-}
+  }
+
+  .slideshow-container {
+    position: relative;
+    top: 0px;
+  }
 
 }

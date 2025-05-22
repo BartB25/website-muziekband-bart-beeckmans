@@ -74,7 +74,9 @@ nav a:hover {
 }
 
     nav a:hover {
-    font-size: 35px;
+    font-size: 25px;
+    color: white;
+    
 }
 
     .nav-menu {
