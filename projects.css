@@ -41,8 +41,21 @@ h3 {
 
 /* VOOR TABLETS */
 @media screen and (max-width: 992px) {
+    .projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    }
 
+    .project-image {
+    width: 350px;
+    height: auto;
+    margin-bottom: 30px;
+    }
 
+    .project {
+    width: 350px;
+    height: auto;
+    }
 }
 
 /* VOOR SMARTPHONES */
@@ -50,6 +63,17 @@ h3 {
     .projects-wrapper {
     display: flex;
     flex-direction: column;
-}
+    }  
 
+.project-image {
+    width: 250px;
+    height: auto;
+    margin-bottom: 30px;
+    }
+.project {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: auto;
+    }
 }
