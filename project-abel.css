@@ -189,8 +189,8 @@ h1 {
   left: 2%;
 }
 
-
 }
+
 
 /* VOOR SMARTPHONES */
 @media screen and (max-width: 768px) {
@@ -217,6 +217,10 @@ h1 {
 .next-icon {
   position: absolute;
   right: 0px;
+}
+
+.prev-fwd-projects a:hover {
+  color: black;
 }
 
 .next {

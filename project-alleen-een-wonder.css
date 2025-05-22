@@ -84,4 +84,8 @@ h1 {
   right: 0px;
 }
 
+.prev-fwd-projects a:hover {
+  color: black;
+}
+
 }

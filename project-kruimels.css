@@ -221,6 +221,10 @@ h1 {
   right: 0px;
 }
 
+.prev-fwd-projects a:hover {
+  color: black;
+}
+
 .next {
   left: 88%;
   border-radius: 3px 0 0 3px;
