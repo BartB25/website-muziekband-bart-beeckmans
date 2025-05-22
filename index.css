@@ -50,6 +50,14 @@ body {
 /* EINDE SLIDESHOW */
 
 
+#visitor-counter {
+  display: block;
+  width: 102px ;
+  height: 88px;
+  margin: 0 auto;
+  padding-bottom: 30px; 
+}
+
 /* VOOR KLEINERE SCHERMEN */
 @media screen and (max-width: 1200px) {
 
