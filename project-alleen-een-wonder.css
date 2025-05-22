@@ -10,6 +10,44 @@ h1 {
     color: lightblue;
 }
 
+.prev-fwd-projects {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Pacifico';
+  height: auto;
+  position: relative;
+  padding-top: 10px;
+}
+
+.prev-fwd-projects a {
+  text-decoration: none;
+}
+
+.prev-fwd-projects :visited {
+
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.prev-icon {
+  margin-left: 25px;
+}
+
+.next-icon {
+  margin-right: 25px;
+}
+
+.prev-fwd-projects a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+}
+
+.prev-fwd-projects a:hover {
+  color: #007bff;
+}
+
 .project-container {
   display: flex;
   flex-direction: column;
@@ -22,4 +60,28 @@ h1 {
 .project-text {
   font-size: 16px;
   line-height: 1.6;
+}
+
+/* VOOR SMARTPHONES */
+@media screen and (max-width: 768px) {
+
+.prev-fwd-projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.prev-icon {
+  margin-left: 25px;
+}
+
+.go-to-projects {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.next-icon {
+  position: absolute;
+  right: 0px;
+}
+
 }
